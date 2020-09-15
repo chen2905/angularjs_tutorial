@@ -1,0 +1,23 @@
+<div class="content">
+  
+      <p>Messge to God:{{message}}</p>
+      <button ng-click="order ='cost'">Order by cost</button>
+      <button ng-click="order ='power'">Order by power</button>
+      <input type="text" ng-model="search" placeholder='search for hero'/>
+      <ul>
+        <li ng-repeat="hero in heros| orderBy: order| filter:search" ng-show='hero.available'>
+          <img ng-src="{{hero.thumb}}" ng-show="hero.thumb"/>
+          <h3>{{hero.name}}-{{hero.cost|currency}}</h3>
+          <span>{{hero.power}}</span>
+          <div class="remove" ng-click="removeHero(hero)">x</div>
+        </li>
+      </ul>
+      <form ng-submit='addNewHero()'>
+        
+       <input type='text' name='name' ng-model='newHero.name' placeholder='name'/>
+        <input type='text' name='power' ng-model='newHero.power' placeholder='power'/>
+        <input type='text' name='cost' ng-model='newHero.cost' placeholder='cost'/>
+           <input type='submit' text= 'Add a new hero'/>
+      </form>
+
+  </div>

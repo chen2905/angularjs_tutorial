@@ -1,0 +1,38 @@
+[
+  {
+    "name": "superman",
+    "power": "many powers",
+    "cost": 10000,
+    "available": true,
+    "thumb": "image/hero1.jpg"
+  },
+
+  {
+    "name": "spiderman",
+    "power": "jumping",
+    "cost": 20000,
+    "available": true,
+    "thumb": "image/hero2.jpg"
+  },
+  {
+    "name": "ironman",
+    "power": "smart,rich",
+    "cost": 30000,
+    "available": true,
+    "thumb": "image/hero3.jpg"
+  },
+  {
+    "name": "batman",
+    "power": "smart,rich",
+    "cost": 0,
+    "available": true,
+    "thumb": "image/hero4.jpg"
+  },
+  {
+    "name": "captain american",
+    "power": "strong",
+    "cost": 0,
+    "available": false,
+    "thumb": "image/hero5.jpg"
+  }
+]
