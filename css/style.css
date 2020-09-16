@@ -118,3 +118,44 @@ body{
     cursor: pointer;
     margin-left: 10px;
   }
+  /* The starting CSS styles for the enter animation */
+main.fade.ng-enter {
+  transition:9s linear all;
+  opacity:0;
+  transform:translateX(30px)
+}
+
+/* The finishing CSS styles for the enter animation */
+main.fade.ng-enter.ng-enter-active {
+  opacity:1;
+  transform:translateX(0);
+  background-color: red;
+}
+#heroList li.ng-enter{
+  transition: 0.5s linear all;
+  opacity: 0;
+  transform:translateY(30px)
+}
+
+#heroList li.ng-enter .ng-enter-active{
+   opacity: 1;
+   transform:translateY(0)
+}
+
+#heroList li.ng-leave{
+  transition: 0.5s linear all;
+  opacity: 1;
+  transform:translateX(0)
+}
+
+#heroList li.ng-leave .ng-leave-active{
+   opacity: 0;
+   transform:translateX(-100%)
+}
+
+input.ng-invalid.ng-touched,textarea.ng-invaalid.ng-touched{
+  border:3px solid red
+}
+textarea{
+  width:100%
+}
