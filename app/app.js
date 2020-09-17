@@ -2,7 +2,10 @@ var myApp = angular.module("myApp", ["ngRoute","ngAnimate"]);
 
 myApp.config([
   "$routeProvider",
-  function ($routeProvider) {
+  "$locationProvider",
+  function ($routeProvider,$locationProvider) {
+
+    $locationProvider.html5Mode(true)
     $routeProvider
       .when("/home", {
         templateUrl: "view/home.html",
